@@ -1,0 +1,77 @@
+.clock  img {
+    margin-top: -47px;
+    margin-left: -146px;
+    max-width: 300px;
+    height: auto;
+  }
+
+ 
+  .clock{
+    width: 200px; height: 200px;  
+    position: relative;
+    margin: 130px auto; }
+
+  .clock:after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #555;
+    display: block;
+    position: absolute;
+    left: 92px;
+    top: 97px; }
+  
+  
+  .clock div{
+    position: absolute;
+    margin-left: 96px; }
+  
+  .sec{
+    height: 100px;
+    width: 4px;
+    top: 52px;
+    background: none;
+    box-shadow: 
+      0 -40px 0 1px #444,
+      0 1px 0 1px #444; 
+  
+    
+    animation: 60s steps(60) tick infinite; }
+  
+  .mns{
+    height: 35px;
+    width: 5px;
+    top: 85px;
+    background: #962033; 
+    box-shadow: 
+    0 -30px #962033,
+    0 -60px #962033,
+    1px 0 7px #777,
+    1px -28px 7px #777,
+    1px -58px 7px #777;
+  
+    animation: 3600s steps(60) tick infinite;
+}
+    
+  .hrs{
+    height: 35px;
+    width: 5px;
+    top: 85px;
+    background: #962033; 
+    box-shadow: 
+    0 -20px #962033,
+    0 -40px #962033,
+    1px 0 3px #777,
+    1px -19px 3px #777,
+    1px -38px 3px #777;  
+
+    animation: 43200s linear tick infinite;}
+    
+  @keyframes tick{
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
